@@ -70,7 +70,33 @@ int main()
 	char* index2 = strstr(str1, "wo"); // 如果wo在str1中，则返回wo往后的字符串，即wo所在的字符串
 	cout << index2 << endl;// 返回world
 
+	// 8、字符串string
+	string stri = "c++ string";
+	string stri2 = "string";
+	int length1 = stri.length();// 字符串长度
+	int length2 = stri.size(); // 字符串大小
+	int capacity = stri.capacity(); // 容量
+	cout << "字符串长度：" << endl;
+	cout << length << endl; // 10
+	cout << length2 << endl;// 12
+	cout << capacity << endl;// 15
+	cout << (stri == stri) << endl; // 不等返回0，相等返回1
 
+	// 9、c++风格的字符串转化为c风格的字符串
+	const char* c_str = stri.c_str();
+	cout << c_str << endl;
+
+	// 10、通过[index]随机访问某个字符
+	char s = stri[2];
+	cout << s << endl;
+
+	// 11、字符串赋值，使用=号
+	string s1 = "ddd";
+	cout << s1.c_str() << endl;
+
+	// 12、使用连接符号+
+	string s3 = stri + s1;
+	cout << s3.c_str() << endl;
     return 0;
 }
 

@@ -97,6 +97,7 @@ int main()
 	// 12、使用连接符号+
 	string s3 = stri + s1;
 	cout << s3.c_str() << endl;
+
     return 0;
 }
 
